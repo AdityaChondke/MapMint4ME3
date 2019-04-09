@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
         android:onClick="OnButtonClick"
-        android:text="AR SUPPORT" />
+        android:text="AR Test" />
 
     <WebView
         android:layout_width="match_parent"
