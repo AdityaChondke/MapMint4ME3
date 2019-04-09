@@ -10,6 +10,15 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
 
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="OnButtonClick"
+        android:text="AR SUPPORT" />
+
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,6 +31,7 @@
             android:orientation="vertical"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp"></LinearLayout>
+
     </WebView>
 
     <!-- This FrameLayout insets its children based on system windows using

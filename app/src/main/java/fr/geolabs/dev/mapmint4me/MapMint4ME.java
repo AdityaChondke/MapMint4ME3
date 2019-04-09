@@ -58,6 +58,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -127,6 +128,7 @@ public class MapMint4ME extends Activity implements
     private LocationRequest mLocationRequest;
     private NotificationManager mManager;
     private String TAG = "MapMint4ME";
+    Button b;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -185,6 +187,9 @@ public class MapMint4ME extends Activity implements
         super.onCreate(savedInstanceState);
         mLocationRequest = LocationRequest.create();
         setContentView(R.layout.activity_map_mint4_me);
+        b=(Button)findViewById(R.id.button2);
+
+
 
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -291,6 +296,13 @@ public class MapMint4ME extends Activity implements
             upgradeMMGPS=true;
             //myWebView.loadUrl("javascript:setTimeout(function(){console.log('##### START !!!');upgradeMMGPS();},100);");
         }
+    }
+    public void OnButtonClick(View V)
+    {
+        Toast.makeText(this,"Working",Toast.LENGTH_SHORT ).show();
+        Intent i = new Intent(MapMint4ME.this,ARPage.class);
+        startActivity(i);
+
     }
 
     private String channel_name="MapMint4ME";

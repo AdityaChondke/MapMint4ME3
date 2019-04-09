@@ -21,6 +21,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class WelcomeScreen extends Activity {
 
@@ -56,6 +57,8 @@ public class WelcomeScreen extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_onboarding);
+
+
         screens = new int[]{
                 R.layout.slide4,
                 R.layout.slide1,
@@ -108,6 +111,12 @@ public class WelcomeScreen extends Activity {
         } else {
             launchMain();
         }
+    }
+
+    public void OnButtonClick(View V)
+    {
+        Toast.makeText(getApplicationContext(), "Your toast message.", Toast.LENGTH_SHORT).show();
+
     }
 
     public void skip(View view) {
