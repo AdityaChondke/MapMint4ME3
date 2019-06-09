@@ -6,7 +6,7 @@ android {
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "fr.geolabs.dev.mapmint4me"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 27
         versionCode 22
         versionName "1.0"

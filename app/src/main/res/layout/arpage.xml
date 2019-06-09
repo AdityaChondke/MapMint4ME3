@@ -3,9 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment android:name="com.google.ar.sceneform.ux.ArFragment"
-        android:id="@+id/ux_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/resolve"
+        android:layout_width="wrap_content"
 
+        android:layout_height="wrap_content"
+        android:text="Resolve" />
+
+    <android.app.FragmentBreadCrumbs
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:name="com.example.mihir.cloudanchors.CustomArFragment"/>
 </RelativeLayout>
